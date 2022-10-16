@@ -130,22 +130,23 @@ ul {
     align-items: center;
 }
 
-.auth-nav .envelope {
+/* .auth-nav .envelope {
     fill: var(--primary-text-color);
-}
+} */
 
 .auth-nav .tel,
 .auth-nav .envelope {
     margin-right: 10px;
-    cursor: pointer;
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items:center;
 
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
 
     font-weight: 500;
     line-height: 1.14;
@@ -156,6 +157,7 @@ ul {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* footer */
@@ -177,6 +179,10 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+}
+
+.footer .container {
+    display: flex;
 }
 
 .adress {
@@ -206,6 +212,42 @@ ul {
 .adress-contact:focus {
     color: var(--accent-color);
 }
+
+.footer-network {
+    margin-left: 70px;
+    width: 206px;
+}
+
+.footer-network .network-title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: calc(16/14);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+.footer-network .network-list {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.footer-network .icon {
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    border-radius:50%;
+
+    fill: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-network .icon:hover,
+.footer-network .icon:focus {
+    background-color: var(--accent-color);
+}
+
 
 /* index */
 /* hero */
@@ -381,7 +423,8 @@ ul {
     border-radius:50%;
 }
 
-.network .icon:hover {
+.network .icon:hover,
+.network .icon:focus {
     background-color: var(--accent-color);
     fill:var(--primary-white-color);
 } 
@@ -427,7 +470,8 @@ ul {
     cursor: pointer;
 }
 
-.list-company .icon:hover {
+.list-company .icon:hover,
+.list-company .icon:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color); 
 }
@@ -448,14 +492,11 @@ ul {
     border: none;
 }
 
-.button.secondary:hover{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
+.button.secondary:hover,
 .button.secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section .filter {
@@ -477,6 +518,10 @@ ul {
 
 .flex-element .link {
     text-decoration: none;
+}
+
+.work-list .flex-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project .project-title {
