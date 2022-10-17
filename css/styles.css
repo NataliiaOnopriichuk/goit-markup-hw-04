@@ -504,7 +504,7 @@ ul {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: calc(26/16);
     cursor: pointer;
     border: none;
 }
@@ -518,12 +518,9 @@ ul {
 
 .section .filter {
     display: flex;
+    gap: 8px;
     justify-content: center;
     margin-bottom: 56px;
-}
-
-.filter .item+ .item {
-    margin-left: 8px;
 }
 
 /* work */
@@ -533,11 +530,13 @@ ul {
     gap: 30px;
 }
 
-.flex-element .link {
+.work-list .link {
+    display: block;
     text-decoration: none;
 }
 
-.work-list .flex-element:hover {
+.work-list .link:hover,
+.work-list .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
