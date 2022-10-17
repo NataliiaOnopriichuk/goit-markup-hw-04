@@ -183,6 +183,7 @@ ul {
 
 .footer .container {
     display: flex;
+    align-items:baseline;
 }
 
 .adress {
@@ -205,10 +206,7 @@ ul {
     line-height: 1.19;
 }
 
-.adress-contact:hover {
-    color: var(--accent-color);
-}
-
+.adress-contact:hover,
 .adress-contact:focus {
     color: var(--accent-color);
 }
@@ -219,12 +217,13 @@ ul {
 }
 
 .footer-network .network-title {
+    margin-bottom: 20px;
+
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: calc(16/14);
     text-transform: uppercase;
+
     color: var(--primary-white-color);
-    margin-bottom: 20px;
 }
 
 .footer-network .network-list {
@@ -233,18 +232,23 @@ ul {
     align-items:center;
 }
 
-.footer-network .icon {
+.footer-network .link {
+    display: flex;
+    justify-content: center;
+    align-items:center;
     height: 44px;
     width: 44px;
-    padding: 12px;
     border-radius:50%;
 
-    fill: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-network .icon:hover,
-.footer-network .icon:focus {
+.footer-network .link {
+    fill: var(--primary-white-color);
+}
+
+.footer-network .link:hover,
+.footer-network .link:focus {
     background-color: var(--accent-color);
 }
 
