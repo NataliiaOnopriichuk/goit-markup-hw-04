@@ -216,6 +216,7 @@ ul {
     margin-bottom: 20px;
 
     font-size: 14px;
+    font-weight: 700;
     line-height: calc(16/14);
     text-transform: uppercase;
 
@@ -252,7 +253,6 @@ ul {
 /* index */
 /* hero */
 .hero {
-    min-height: 600px;
     max-width: 1600px;
     margin: 0 auto;
     padding-top: 200px;
